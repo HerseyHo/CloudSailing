@@ -1,4 +1,5 @@
 <template>
+  <!-- 登录页 -->
   <div
     class="login flex-column flex-justify-center flex-align-center m0 b0">
     <a-image
@@ -37,7 +38,7 @@
           :disabled="loginBtnDisabled"
           @click="onSubmit"
         >
-          Login
+          登录
         </a-button>
       </a-form-item>
     </a-form>

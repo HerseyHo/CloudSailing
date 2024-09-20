@@ -16,7 +16,7 @@
     </router-link>
     </div>
     <div class="mb20 flex-display flex-column flex-align-center flex-justify-between">
-      <a-tooltip title="Back to home" placement="right">
+      <a-tooltip title="返回后台" placement="right">
         <a @click="goHome"> <Icon icon="ImportOutlined" style="font-size: 22px; color: white"/></a>
       </a-tooltip>
     </div>
@@ -54,12 +54,12 @@ export default defineComponent({
     const root = getRoot()
     const options = [
       { key: 0, label: 'Tsa', path: '/' + ERouterName.TSA, icon: 'TeamOutlined' },
-      { key: 1, label: 'Livestream', path: '/' + ERouterName.LIVESTREAM, icon: 'VideoCameraOutlined' },
+      { key: 1, label: '直播流', path: '/' + ERouterName.LIVESTREAM, icon: 'VideoCameraOutlined' },
       { key: 2, label: 'Annotations', path: '/' + ERouterName.LAYER, icon: 'EnvironmentOutlined' },
-      { key: 3, label: 'Media Files', path: '/' + ERouterName.MEDIA, icon: 'PictureOutlined' },
-      { key: 4, label: 'Flight Route Library', path: '/' + ERouterName.WAYLINE, icon: 'NodeIndexOutlined' },
-      { key: 5, label: 'Task Plan Library', path: '/' + ERouterName.TASK, icon: 'CalendarOutlined' },
-      { key: 6, label: 'Flight Area', path: '/' + ERouterName.FLIGHT_AREA, icon: 'GroupOutlined' },
+      { key: 3, label: '媒体文件', path: '/' + ERouterName.MEDIA, icon: 'PictureOutlined' },
+      { key: 4, label: '航线管理', path: '/' + ERouterName.WAYLINE, icon: 'NodeIndexOutlined' },
+      { key: 5, label: '任务计划库', path: '/' + ERouterName.TASK, icon: 'CalendarOutlined' },
+      { key: 6, label: '飞行区域', path: '/' + ERouterName.FLIGHT_AREA, icon: 'GroupOutlined' },
     ]
 
     function selectedRoute (item: IOptions) {
